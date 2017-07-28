@@ -5,8 +5,8 @@ var mysql = require("mysql");
 var connection;
 
 if(process.env.JAWSDB_URL){
-  connection = mysql://tkgz7fzuukbdr4m7:neqyig6hi9a2gk6l@lgg2gx1ha7yp2w0k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ezddphwlec9p1ie4
-}else {}
+  connection = "mysql://tkgz7fzuukbdr4m7:neqyig6hi9a2gk6l@lgg2gx1ha7yp2w0k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ezddphwlec9p1ie4"
+}else {
   connection = mysql.createConnection({
     port: 3306,
     host: "localhost",
