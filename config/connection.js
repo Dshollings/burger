@@ -1,6 +1,5 @@
 // Require mysql
 var mysql = require("mysql");
-
 // Set up MySQL connection. If deployed through Heroku, use JAWSDB
 var connection;
 
@@ -15,7 +14,6 @@ if(process.env.JAWSDB_URL){
     database: "burgers_db"
   });
 }
-
 // Make connection.
 connection.connect(function(err) {
   if (err) {
@@ -24,6 +22,5 @@ connection.connect(function(err) {
   }
   console.log("connected as id " + connection.threadId);
 });
-
-// Export connection for our ORM to use.
+// Export connection for ORM
 module.exports = connection;
